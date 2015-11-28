@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ParkingFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="darkbackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="a1v-Ob-yll">
+                                <rect key="frame" x="-5" y="-12" width="338" height="580"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Sef-fK-8ad">
+                                <rect key="frame" x="82" y="20" width="157" height="118"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Drawing (2).png" translatesAutoresizingMaskIntoConstraints="NO" id="k6j-eE-8dJ">
+                                <rect key="frame" x="52" y="210" width="217" height="74"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Drawing (3).png" translatesAutoresizingMaskIntoConstraints="NO" id="3wC-IU-lxH">
+                                <rect key="frame" x="49" y="333" width="217" height="74"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFR-zW-fdE">
+                                <rect key="frame" x="37" y="174" width="254" height="115"/>
+                                <animations/>
+                                <connections>
+                                    <segue destination="seg-fU-hdL" kind="modal" modalTransitionStyle="coverVertical" id="31V-nn-nyr"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wDV-fo-csp">
+                                <rect key="frame" x="49" y="431" width="217" height="0.0"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPB-fS-rAP">
+                                <rect key="frame" x="35" y="322" width="245" height="95"/>
+                                <animations/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Drawing (9).png" translatesAutoresizingMaskIntoConstraints="NO" id="SlL-4n-v5Y">
+                                <rect key="frame" x="44" y="432" width="254" height="0.0"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Drawing (9).png" translatesAutoresizingMaskIntoConstraints="NO" id="GZk-sb-wMD">
+                                <rect key="frame" x="49" y="455" width="220" height="77"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="434" y="389"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="pgt-PX-Fn2">
+            <objects>
+                <viewController id="seg-fU-hdL" customClass="map" customModule="ParkingFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z5u-qY-Bin"/>
+                        <viewControllerLayoutGuide type="bottom" id="m3I-z7-jKO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OeA-X9-L7Y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="darkbackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="cie-en-t5y">
+                                <rect key="frame" x="-9" y="-11" width="338" height="590"/>
+                                <animations/>
+                            </imageView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dQC-HF-8z1">
+                                <rect key="frame" x="9" y="36" width="302" height="450"/>
+                                <animations/>
+                            </mapView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backarrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="2c2-4z-kVU">
+                                <rect key="frame" x="9" y="490" width="71" height="70"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zw7-Bn-fAf">
+                                <rect key="frame" x="9" y="494" width="71" height="61"/>
+                                <animations/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="flipHorizontal" id="Ako-O0-BJa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="map" destination="dQC-HF-8z1" id="uq6-bi-DPp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XZT-1a-gr4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="862" y="242"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Drawing (2).png" width="707" height="339"/>
+        <image name="Drawing (3).png" width="707" height="339"/>
+        <image name="Drawing (9).png" width="403" height="201"/>
+        <image name="backarrow.png" width="201" height="201"/>
+        <image name="darkbackground.png" width="183" height="275"/>
+        <image name="logo.gif" width="203" height="155"/>
+    </resources>
+</document>
